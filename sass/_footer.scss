@@ -1,0 +1,51 @@
+@import "colors";
+@import "mixins";
+
+footer{
+    font-family: 'Lato', sans-serif;
+    background-color: $black;
+    color: $white;
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+    
+    .columns{
+        
+            display: flex;
+            flex-direction: column;
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+
+            h2{
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+            a{
+                text-decoration: none;
+                color: $white;
+                padding-top: 5px;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            h3{
+                padding-top: 10px
+            }
+        }
+    
+
+}
+
+@media (max-width: 611px){
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+}
